@@ -166,8 +166,8 @@ function drawOnCanvas(ctx, props, moreProps) {
 			ctx.stroke(); */
 			const d = each.wick;
 
-			ctx.fillRect(d.x - 0.5, d.y1, 1, d.y2 - d.y1);
-			ctx.fillRect(d.x - 0.5, d.y3, 1, d.y4 - d.y3);
+			ctx.fillRect(d.x - 1, d.y1, 2, d.y2 - d.y1);
+			ctx.fillRect(d.x - 1, d.y3, 2, d.y4 - d.y3);
 		});
 	});
 
@@ -210,7 +210,7 @@ function drawOnCanvas(ctx, props, moreProps) {
 					ctx.lineTo(d.x + d.width, d.y + d.height);
 					ctx.stroke();
 					*/
-					ctx.fillRect(d.x, d.y - 0.5, d.width, 1);
+					ctx.fillRect(d.x, d.y - 0.5, d.width, 3);
 				} else {
 					/*
 					ctx.beginPath();
